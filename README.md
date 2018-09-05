@@ -12,4 +12,12 @@
     5.git push -u origin master
 
 
-二、
+二、手动创建redux.js 页面 导出一个createStore
+    1.创建一个仓库 里面返回 三个方法
+      getState
+      subscribe 订阅  listeners.push(listener)
+      dispatch 分发 发送  分发后 会遍历通知所有监听者对象 执行
+
+三、监听者对象
+    1.订阅 subscribe(render)
+    2.render方法 渲染
